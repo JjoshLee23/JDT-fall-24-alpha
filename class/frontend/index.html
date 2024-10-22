@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name</title>
 </head>
@@ -29,21 +30,22 @@
       <div id="chat">
         <form>
           <h2>Ask Me A Question</h2>
-          <input type="text" id="questionInput" placeholder="What would you like to ask?">
+          <input type="text" name='user-input' id="questionInput" placeholder="What would you like to ask?">
           <button type="submit">Submit</button>
         </form>
       </div>
   
       <div id="about">
         <h2>
-          <button class="toggler">hide</button>
-          About Me
+        <button class="toggler" onclick = "toggle()" >hide</button>
+          About Me 
         </h2>
+        <div id="hideshow1">
         <p>
-          I'm a student at Boston University studying [major]. I'm currently a
-          member of [orginization]. I'm excited to learn more about [topic]. I
-          have expereience in [skill 1], [skill 2], and [skill 3]. Feel free to
-          contact me at yourEmailHere@gmail.com!
+          I'm a student at Boston University studying Data Science. I'm currently a
+          member of Hack4Impact. I'm excited to learn more about web development. I
+          have expereience in python for data analysis, java, and rust. 
+          Feel free to contact me at leejosh@bu.edu!
         </p>
         <h3>My Skills</h3>
         <div class="icons">
@@ -53,7 +55,7 @@
           <img width="60" src ="images/javascript-svgrepo-com.svg">
         </div>
       </div>
-  
+    </div>
       <div id="projects">
         <h2>Projects</h2>
         <div class="project">
@@ -103,6 +105,6 @@
           </ul>
         </div>
       </div>
-      <script src="script.js"></script>
+      <script src="Script.js"></script>
   </body>
 </html>
